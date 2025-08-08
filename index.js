@@ -17,3 +17,12 @@ function getComputerChoice () {
 }
 
 getComputerChoice();
+
+// get user choice
+function getHumanChoice () {
+    const userChoice = prompt('Rock, Paper or Scissors ?');
+    return userChoice.toLowerCase();
+}
+
+getHumanChoice();
+
