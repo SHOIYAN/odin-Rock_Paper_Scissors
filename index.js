@@ -28,5 +28,36 @@ function getHumanChoice () {
     return userChoice.toLowerCase();
 }
 
-getHumanChoice();
+// single round of play
 
+function playRound (humanChoice, computerChoice) {
+    if (computerChoice ===  humanChoice ) {
+        console.log("It's a Tie!");
+    }
+    // When Computer wins
+    else if (computerChoice === 'rock' && humanChoice === 'scissors') {
+        console.log('You lose! Rock beats Scissors');
+        computerScore++ ;
+    }
+    else if (computerChoice === 'scissors' && humanChoice === 'paper') {
+        console.log('You lose! Scissors beats Paper');
+        computerScore++ ;
+    }
+    else if (computerChoice === 'paper' && humanChoice === 'rock') {
+        console.log('You lose! Paper beats Rock');
+        computerScore++ ;
+    }
+    // When Player wins
+    else if (humanChoice === 'rock' && computerChoice === 'scissors') {
+        console.log('You win! Rock beats Scissors');
+        humanScore++ ;
+    }
+    else if (humanChoice === 'scissors' && computerChoice === 'paper') {
+        console.log('You win! Scissors beats Paper');
+        humanScore++ ;
+    }
+    else if (humanChoice === 'paper' && computerChoice === 'rock') {
+        console.log('You win! Paper beats Rock');
+        humanScore++ ;
+    }
+}
