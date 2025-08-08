@@ -1,3 +1,7 @@
+// player score variables
+
+let humanScore = 0;
+let computerScore = 0;
 
 // get computer choice
 
