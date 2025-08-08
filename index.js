@@ -20,8 +20,6 @@ function getComputerChoice () {
     }
 }
 
-getComputerChoice();
-
 // get user choice
 function getHumanChoice () {
     const userChoice = prompt('Rock, Paper or Scissors ?');
@@ -61,3 +59,23 @@ function playRound (humanChoice, computerChoice) {
         humanScore++ ;
     }
 }
+
+// 5rounds of play
+
+function playGame () {
+    // 5 rounds of play
+    for (let i = 0; i <= 5; i++){
+        const usrChoice = getHumanChoice();
+        const computerChoice = getComputerChoice();
+        playRound(usrChoice, computerChoice);
+    }
+    // declare winner
+    if (humanScore > computerScore){
+        console.log("'You Win'. Congratulations!");
+    }
+    else {
+        console.log("You Lose!");
+    }
+}
+
+playGame();
