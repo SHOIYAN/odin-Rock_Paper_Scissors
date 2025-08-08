@@ -64,7 +64,7 @@ function playRound (humanChoice, computerChoice) {
 
 function playGame () {
     // 5 rounds of play
-    for (let i = 0; i <= 5; i++){
+    for (let i = 1; i <= 5; i++){
         const usrChoice = getHumanChoice();
         const computerChoice = getComputerChoice();
         playRound(usrChoice, computerChoice);
@@ -72,12 +72,14 @@ function playGame () {
     // declare winner
     if (humanScore > computerScore){
         console.log("'You Win'. Congratulations!");
-        console.log(`Your Score: ${humanScore}, Comp Score: ${computerScore}`);
+    }
+    else if (humanScore < computerScore){
+        console.log("You Lose!"); 
     }
     else {
-        console.log("You Lose!");
-        console.log(`Your Score: ${humanScore}, Comp Score: ${computerScore}`);
+        console.log("It's an overall Tie!");
     }
+    console.log(`Your Score: ${humanScore}, Comp Score: ${computerScore}`);
 }
 
 playGame();
