@@ -1,9 +1,26 @@
 # odin-Rock_Paper_Scissors
 
-## What I Learned
-- How to get and store user input using `prompt()`
-- Using `Math.random()` to generate a random choice for the computer
-- Making input **case-insensitive** with `.toLowerCase()`
-- Writing conditional logic with `if...else` to determine a winner
-- Tracking scores using variables
-- Running a function multiple times in a loop to play several rounds
+# Rock Paper Scissors 🎮  
+
+A browser-based Rock Paper Scissors game built with **HTML, CSS, and JavaScript**.  
+The game features an interactive UI, live score tracking, and win detection.  
+
+## Features  
+- Play Rock, Paper, Scissors against the computer  
+- Scoreboard updates dynamically  
+- Game ends automatically when a player reaches 5 points  
+- "Play Again" button to reset and restart  
+
+## Tech Stack  
+- HTML5  
+- CSS3  
+- JavaScript (DOM manipulation, event handling)  
+
+## How to Play  
+1. Open `index.html` in your browser.  
+2. Click Rock, Paper, or Scissors.  
+3. First to 5 points wins.  
+4. Click **Play Again** to restart.  
+
+## Demo  
+[Live Preview](https://shoiyan.github.io/odin-Rock_Paper_Scissors/)  
