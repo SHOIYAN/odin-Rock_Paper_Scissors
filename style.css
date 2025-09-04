@@ -1,0 +1,78 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9d6e4, #d6e9f9);
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.display {
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 120px;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+.display p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+.display h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+button {
+  background: #4cafef;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #3a8cd4;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.reset-btn {
+  background: #ff6961;
+  margin-top: 15px;
+}
+
+.reset-btn:hover {
+  background: #e05650;
+}
